@@ -1,0 +1,12 @@
+.error-notification {
+    @include position(fixed, 0 0 0 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: rgba(32, 37, 50, 0.6);
+    &__content {
+        background-color: $white;
+        max-width: 400px;
+    }
+}

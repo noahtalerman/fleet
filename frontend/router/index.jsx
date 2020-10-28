@@ -73,7 +73,7 @@ const routes = (
           </Route>
         </Route>
       </Route>
-      <Route path="/500" component={Kolide500} />
+      {/* <Route path="/500" component={Kolide500} /> */}
       <Route path="/404" component={Kolide404} />
       <Route component={Kolide404} />
     </Router>

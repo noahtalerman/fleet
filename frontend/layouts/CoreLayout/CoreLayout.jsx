@@ -11,6 +11,7 @@ import FlashMessage from 'components/flash_messages/FlashMessage';
 import PersistentFlash from 'components/flash_messages/PersistentFlash';
 import SiteNavHeader from 'components/side_panels/SiteNavHeader';
 import SiteNavSidePanel from 'components/side_panels/SiteNavSidePanel';
+import ErrorNotification from 'components/ErrorNotification';
 import userInterface from 'interfaces/user';
 import notificationInterface from 'interfaces/notification';
 import { hideFlash } from 'redux/nodes/notifications/actions';
@@ -105,6 +106,7 @@ export class CoreLayout extends Component {
     return (
       <div className="app-wrap">
         <LoadingBar />
+        <ErrorNotification />
         <nav className={siteNavClasses}>
           <SiteNavHeader
             config={config}
